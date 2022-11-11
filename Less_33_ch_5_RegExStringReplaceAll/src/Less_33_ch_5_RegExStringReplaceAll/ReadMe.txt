@@ -1,0 +1,1 @@
+Пример работы метода *.replaceFirst() и *.replaceAll()
