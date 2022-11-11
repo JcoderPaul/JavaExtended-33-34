@@ -1,4 +1,4 @@
-******* Class Pattern - Класс Паттерн *******
+******* Class Matcher - Класс Матчер - Сопоставитель *******
 
 Пакеты Java:
 java.lang.Object
