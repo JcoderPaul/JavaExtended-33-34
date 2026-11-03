@@ -18,25 +18,25 @@ public final class Matcher
     implements MatchResult
 ```
 
-Механизм, который выполняет операции сопоставления последовательности символов,
-интерпретируя шаблон. Сопоставитель - matcher создается из шаблона путем вызова
-метода сопоставления шаблона. После создания сопоставитель может использоваться
-для выполнения трех различных операций сопоставления:
-- метод *.matches() - пытается сопоставить всю входную последовательность с шаблоном;
-- метод *.lookingAt() - пытается сопоставить входную последовательность, начиная с
-  самого начала, с шаблоном.
-- метод *.find() - сканирует входную последовательность в поисках следующей
-  подпоследовательности, соответствующей шаблону.
+Механизм, который выполняет операции сопоставления [последовательности символов - CharSequence](https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html),
+интерпретируя [шаблон - Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html). Сопоставитель - matcher создается из шаблона путем вызова
+[метода сопоставления](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#matcher-java.lang.CharSequence-) шаблона. После создания сопоставитель 
+может использоваться для выполнения трех различных операций сопоставления:
+- [метод *.matches()](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#matches--) - пытается сопоставить всю входную последовательность с шаблоном;
+- [метод *.lookingAt()](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#lookingAt--) - пытается сопоставить входную последовательность, начиная с самого начала, с шаблоном.
+- [метод *.find()](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#find--) - сканирует входную последовательность в поисках следующей подпоследовательности, соответствующей шаблону.
 
 Каждый из этих методов возвращает логическое значение, указывающее на успех или неудачу.
 Дополнительную информацию об успешном совпадении можно получить, запросив состояние
 сопоставителя - matcher.
 
-Сопоставитель находит совпадения в подмножестве своих входных данных, называемом region.
-По умолчанию region содержит все входные данные сопоставителя. Область можно изменить с
-помощью метода *.region() - и запросить с помощью методов *.regionStart() - и *.regionEnd() -.
-Способ взаимодействия границ области с некоторыми конструкциями шаблона может быть изменен.
-Дополнительные сведения см. методы useAnchoringBounds и useTransparentBounds.
+Сопоставитель находит совпадения в подмножестве своих входных данных, называемом region. По умолчанию region содержит все входные данные сопоставителя. Область можно изменить с
+помощью [метода *.region()](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#region-int-int-) и запросить с помощью 
+[методов *.regionStart()](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#regionStart--) и 
+[*.regionEnd()](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#regionEnd--).
+Способ взаимодействия границ области с некоторыми конструкциями шаблона может быть изменен. Дополнительные сведения см. методы 
+[useAnchoringBounds](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#useAnchoringBounds-boolean-) и 
+[useTransparentBounds](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html#useTransparentBounds-boolean-).
 
 Данный класс также определяет методы замены совпадающих подпоследовательностей новыми
 строками, содержимое которых при желании можно вычислить из результата сопоставления.
