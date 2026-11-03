@@ -1,11 +1,22 @@
-******* Class Matcher - Класс Матчер - Сопоставитель *******
+- [Class Matcher](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html)
 
-Пакеты Java:
+---
+### Class Matcher - Сопоставитель
+
+**Пакет:** [java.util.regex](https://docs.oracle.com/javase/8/docs/api/java/util/regex/package-summary.html)
+
+```
 java.lang.Object
-java.util.regex.Matcher
+  java.util.regex.Matcher
+```
 
-Супер классы и реализованные интерфейсы:
-public final class Matcher extends Object implements MatchResult
+**Все реализованные интерфейсы:** [MatchResult](https://docs.oracle.com/javase/8/docs/api/java/util/regex/MatchResult.html)
+
+```java
+public final class Matcher
+  extends Object
+    implements MatchResult
+```
 
 Механизм, который выполняет операции сопоставления последовательности символов,
 интерпретируя шаблон. Сопоставитель - matcher создается из шаблона путем вызова
