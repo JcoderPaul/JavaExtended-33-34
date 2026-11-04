@@ -49,7 +49,15 @@ public final class Pattern
 **Методы класса Pattern:**
 - `static Pattern compile(String regex)` - компилирует заданное регулярное выражение в шаблон, где regex- выражение для компиляции;
 - `String toString()` - возвращает строковое представление regex шаблона;
-- `static Pattern compile(String regex, int flags)` - компилирует данное регулярное выражение в шаблон с заданными флагами, regex- выражение для компиляции, flags- флаги соответствия, битовая маска, которая может включать CASE_INSENSITIVE, MULTILINE, DOTALL, UNICODE_CASE, CANON_EQ, UNIX_LINES, LITERAL, UNICODE_CHARACTER_CLASS и COMMENTS;
+- `static Pattern compile(String regex, int flags)` - компилирует данное регулярное выражение в шаблон с заданными флагами, regex- выражение для компиляции, flags- флаги соответствия, битовая маска, которая может включать [CASE_INSENSITIVE](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#CASE_INSENSITIVE),
+[MULTILINE](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#MULTILINE),
+[DOTALL](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#DOTALL),
+[UNICODE_CASE](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#UNICODE_CASE),
+[CANON_EQ](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#CANON_EQ),
+[UNIX_LINES](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#UNIX_LINES),
+[LITERAL](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#LITERAL),
+[UNICODE_CHARACTER_CLASS](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#UNICODE_CHARACTER_CLASS),
+[COMMENTS](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#COMMENTS);
 - `int flags()` - возвращает флаги соответствия этого шаблона;
 - `String pattern()` - возвращает регулярное выражение, из которого был скомпилирован текущий шаблон;
 - `static String	quote(String s)` - возвращает литеральную строку шаблона для указанной строки String s. Этот метод создает строку, которую можно использовать для генерации шаблона, который в свою очередь будет соответствовать String s, как если бы это был буквальный шаблон. Метасимволы или управляющие последовательности во входной последовательности не будут иметь специального значения;
@@ -59,6 +67,7 @@ public final class Pattern
 - `static boolean matches(String regex, CharSequence input)` - компилирует данное 'регулярное выражение - regex' и пытается сопоставить с ним заданный 'ввод - input'. Где regex - выражение для компиляции, input - последовательность символов, которая должна быть сопоставлена.
 
   **Вызов:** `Pattern.matches(regex, input);`
+  
   **Работает точно так же, как выражение:** `Pattern.compile(regex).matcher(input).matches()`
 
 --- 
@@ -91,8 +100,21 @@ public final class Pattern
 | o     | -2    | { "b", "", ":and:f", "", "" } |
 | o     | 0     | { "b", "", ":and:f" }         |
 
+---
+**Доп. материалы:**
+- [Class Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
+- [Class Matcher](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html)
+- [Interface CharSequence](https://docs.oracle.com/javase/8/docs/api/java/lang/CharSequence.html)
+- [The Java™ Tutorials - Methods of the Pattern Class **(by ORACLE)**](https://docs.oracle.com/javase/tutorial/essential/regex/pattern.html)
+- [The Java™ Tutorials - Regular Expressions **(by ORACLE)**](https://docs.oracle.com/javase/tutorial/essential/regex/index.html)
 
-
-
-------------------------------------------------------------------------------------------
-Более подробно: https://docs.oracle.com/javase/7/docs/api/java/util/regex/Pattern.html
+--- 
+- [JDK 27 Documentation](https://docs.oracle.com/en/java/javase/27/index.html)
+- [Java Pattern Class](https://www.geeksforgeeks.org/java/pattern-class-in-java/)
+- [Java Pattern `pattern()` Method](https://www.geeksforgeeks.org/java/pattern-pattern-method-in-java-with-examples/)
+- [Java Regular Expressions](https://www.w3schools.com/java/java_regex.asp)
+- [Java Pattern Class](https://zetcode.com/java/regex-pattern-class/)
+- [Java Regular Expression (Java Regex) with Examples](https://data-flair.training/blogs/java-regular-expression/)
+- [The Pattern Class](https://dev.java/learn/api/date-time-regex/regex/patterns/)
+- [Regex Character Classes in Java](https://www.geeksforgeeks.org/java/regex-character-cases-in-java/)
+- [Regular expressions in Java](https://codegym.cc/groups/posts/regex-java)
