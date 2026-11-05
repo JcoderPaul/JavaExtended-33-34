@@ -299,9 +299,18 @@ Unicode могут использоваться в выражениях, счи�
 
 ---
 **Доп. материал:**
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [The Java™ Tutorials - Regular Expressions **(by ORACLE)**](https://docs.oracle.com/javase/tutorial/essential/regex/)
+- [Class Pattern](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html)
+- [Class Matcher](https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html)
+- [Class Character](https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html)
+- [Java Language and Virtual Machine Specifications **(by ORACLE)**](https://docs.oracle.com/javase/specs/)
+- [About the Unicode® Standard **(from unicode.org)**](https://www.unicode.org/standard/standard.html)
+- [Unicode® Technical Standard #18 - Unicode Regular Expressions **(from unicode.org)**](https://www.unicode.org/reports/tr18/)
+
+---
+- [Java Regular Expressions **(from w3schools.com)**](https://www.w3schools.com/java/java_regex.asp)
+- [A Guide To Java Regular Expressions API **(from baeldung.com)**](https://www.baeldung.com/regular-expressions-java)
+- [Regular Expressions in Java **(from geeksforgeeks.org)**](https://www.geeksforgeeks.org/java/regular-expressions-in-java/)
+- [Regular Expressions **(from dev.java)**](https://dev.java/learn/api/date-time-regex/regex/)
+- [Regular expressions in Java - Tutorial](https://www.vogella.com/tutorials/JavaRegularExpressions/article.html)
+- [Java Regular Expression (Java Regex) with Examples](https://data-flair.training/blogs/java-regular-expression/)
