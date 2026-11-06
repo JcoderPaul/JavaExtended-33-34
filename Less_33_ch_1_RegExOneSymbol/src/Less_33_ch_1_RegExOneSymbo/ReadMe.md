@@ -55,13 +55,26 @@
 - [Less_33_RegEx_Step11](./Less_33_RegEx_Step11.java) - Пример метасимвола: `\W` - **НЕ** цифровой символ, **НЕ** буквенный и **НЕ** `_`, равносилен набору `[^a-zA-Z_0-9]` или `[^\w]` , т.е. выбираем пробел, знаки препинания и другие символы.
 - [Less_33_RegEx_Step12](./Less_33_RegEx_Step12.java) - Пример на: `[ABC]` - или A или B или C (простой класс), выбор любого символа из набора.
 
+---
+**Доп. материалы:**
+- [Class Matcher](./MatcherClass.md)
+- [Class Pattern](./PatternClass.md)
+- [Конструкции RegEx](./RegExСonstructs.md)
 
+---
+- [The Java™ Tutorials - Regular Expressions **(by ORACLE)**](https://docs.oracle.com/javase/tutorial/essential/regex/)
+- [Java Language and Virtual Machine Specifications **(by ORACLE)**](https://docs.oracle.com/javase/specs/)
+- [About the Unicode® Standard **(from unicode.org)**](https://www.unicode.org/standard/standard.html)
+- [Unicode® Technical Standard #18 - Unicode Regular Expressions **(from unicode.org)**](https://www.unicode.org/reports/tr18/)
 
-
-
-
-
-
-
-
-
+---
+- [Java Regular Expression Tutorial with Examples](https://www.javacodegeeks.com/2012/11/java-regular-expression-tutorial-with-examples.html)
+- [Guide to Regular Expressions in Java](https://stackabuse.com/guide-to-regular-expressions-in-java/)
+- [Mastering Regex in Java: A Developer's Essential Guide](https://dev.to/gadekar_sachin/-mastering-regex-in-java-a-developers-essential-guide-994)
+- [Регулярные выражения в Java (RegEx)](https://javarush.com/groups/posts/regulyarnye-vyrazheniya-v-java)
+- [Regular Expression in Java: Regex Examples & Tutorial](https://www.digitalocean.com/community/tutorials/regular-expression-in-java-regex-example)
+- [Java Programming Tutorial - Regular Expression (Regex) in Java](https://www3.ntu.edu.sg/home/ehchua/programming/java/Java_Regexe.html)
+- [Java Regular Expression Tutorial](https://mkyong.com/tutorials/java-regular-expression-tutorials/)
+- [Java - Regular Expressions](https://www.tutorialspoint.com/java/java_regular_expressions.htm)
+- [Java Regex Tutorial: Pattern, Matcher and All Examples](https://howtodoinjava.com/java-regular-expression-tutorials/)
+- [Java Regular Expressions (java regex) Tutorial with examples](https://beginnersbook.com/2014/08/java-regex-tutorial/)
