@@ -43,33 +43,38 @@
 ---
 **Примеры использования RegEx:**
 
-[Less_33_RegExMultiSymbol_Step1](./Less_33_RegExMultiSymbol_Step1.java) и [Less_33_RegExMultiSymbol_Step2](./Less_33_RegExMultiSymbol_Step2.java) - Пример квантификатора: `+` - некий символ один или несколько раз.
+- **[Less_33_RegExMultiSymbol_Step1](./Less_33_RegExMultiSymbol_Step1.java)**
+- **[Less_33_RegExMultiSymbol_Step2](./Less_33_RegExMultiSymbol_Step2.java)**
                                  
-**Например:**
+**Например применения квантификатора: `+` - некий символ один или несколько раз.:**
 - `a+` - может означать любое количество букв `a` подряд `a, aa, aaa, aaaa` и т.д.
 - `[0-9]+` - означает любое количество цифровых символов подряд `1, 12, 435, 646645` и т.д.
 - `[A-Z]+` - означает любое количество больших букв подряд `B, BB, FDRJ, VDAEHG` и т.д.
 
-[Less_33_RegExMultiSymbol_Step3](./Less_33_RegExMultiSymbol_Step3.java) - Пример квантификатора: `{n}` - n- символов подряд.
+---
+**[Less_33_RegExMultiSymbol_Step3](./Less_33_RegExMultiSymbol_Step3.java)** - применение квантификатора: `{n}` - n- символов подряд.
                                  
 **Например:**
 - `a{3}` - может означать 3-х кратное повторение буквы `a`, т.е. `aaa`
 - `[0-9]{4}` - означает 4-х кратное повторение цифровых символов подряд `2341, 6412, 4375` и т.д.
 - `[A-Z]{6}` - означает 6-и кратное повторение больших букв подряд `BDRFRT, BSSSSB, FDHHRJ` и т.д.
 
-[Less_33_RegExMultiSymbol_Step4](./Less_33_RegExMultiSymbol_Step4.java)
+---
+**[Less_33_RegExMultiSymbol_Step4](./Less_33_RegExMultiSymbol_Step4.java)**
 
 **Например:**
 - Найдем все буквенно-цифровые последоваетльности игнорируя знаки препинания;
 - Найдем номера домов и квартир;
 
-[Less_33_RegExMultiSymbol_Step5](./Less_33_RegExMultiSymbol_Step5.java)
+---
+**[Less_33_RegExMultiSymbol_Step5](./Less_33_RegExMultiSymbol_Step5.java)**
 
 **Например:**
 - Найдем только телефоны, это + и девять цифр, т.е. `+[0-9]{9}`;
 - Найти все емайлы, а это последовательность `\w+@\w+.(ru|com)` для примера ограничимся только зонами `RU` и `COM`;
 
-[Less_33_RegExMultiSymbol_Step6](./Less_33_RegExMultiSymbol_Step6.java)
+---
+**[Less_33_RegExMultiSymbol_Step6](./Less_33_RegExMultiSymbol_Step6.java)**
 
 **Примеры работы с:**
 - Пример 1 -> `\s` - пробельный символ или табуляция, перевод строки, конец страницы `[ \t\n\x0B\f\r]`;
@@ -77,7 +82,8 @@
 - Пример 3 и 4 -> `X{n,} - X`, не менее `n` раз;
 - Пример 4 и 5 -> `(XYZ) - XYZ`, как захватывающая группа;
 
-[Less_33_RegExMultiSymbol_Step7](./Less_33_RegExMultiSymbol_Step7.java)
+---
+**[Less_33_RegExMultiSymbol_Step7](./Less_33_RegExMultiSymbol_Step7.java)**
 
 **Примеры работы с:**
 - Пример 1 -> `\X? - Х`, один раз или ни разу;
