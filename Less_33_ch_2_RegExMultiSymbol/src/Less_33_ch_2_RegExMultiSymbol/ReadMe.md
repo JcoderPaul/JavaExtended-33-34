@@ -43,8 +43,9 @@
 ---
 **Примеры использования RegEx:**
 
-- **[Less_33_RegExMultiSymbol_Step1](./Less_33_RegExMultiSymbol_Step1.java)**
-- **[Less_33_RegExMultiSymbol_Step2](./Less_33_RegExMultiSymbol_Step2.java)**
+**[Less_33_RegExMultiSymbol_Step1](./Less_33_RegExMultiSymbol_Step1.java)**
+
+**[Less_33_RegExMultiSymbol_Step2](./Less_33_RegExMultiSymbol_Step2.java)**
                                  
 **Например применения квантификатора: `+` - некий символ один или несколько раз.:**
 - `a+` - может означать любое количество букв `a` подряд `a, aa, aaa, aaaa` и т.д.
@@ -52,9 +53,9 @@
 - `[A-Z]+` - означает любое количество больших букв подряд `B, BB, FDRJ, VDAEHG` и т.д.
 
 ---
-**[Less_33_RegExMultiSymbol_Step3](./Less_33_RegExMultiSymbol_Step3.java)** - применение квантификатора: `{n}` - n- символов подряд.
+**[Less_33_RegExMultiSymbol_Step3](./Less_33_RegExMultiSymbol_Step3.java)**
                                  
-**Например:**
+**Например применения квантификатора: `{n}` - n- символов подряд.:**
 - `a{3}` - может означать 3-х кратное повторение буквы `a`, т.е. `aaa`
 - `[0-9]{4}` - означает 4-х кратное повторение цифровых символов подряд `2341, 6412, 4375` и т.д.
 - `[A-Z]{6}` - означает 6-и кратное повторение больших букв подряд `BDRFRT, BSSSSB, FDHHRJ` и т.д.
@@ -91,7 +92,19 @@
 - Пример 3 -> `\A` - определенное начало последовательности (входящих данных);
 - Пример 4 -> `\Z` - определенный конец вводящей последовательности, если он есть;
 
-
-
-
-
+---
+**Доп. материалы:**
+- [Regular expression in java (java String) **(from stackoverflow.com)**](https://stackoverflow.com/questions/64593822/regular-expression-in-java-java-string)
+- [Regular Expressions **(from kompf.de dlog)**](https://www.kompf.de/java/regex.html)
+- [Regex for a Java Software Engineer](https://dev.to/joaomarques/regex-for-a-java-software-engineer-3np4)
+- [Java Regex - Java Regular Expressions **(from jenkov.com)**](https://jenkov.com/tutorials/java-regex/index.html)
+- [Java Regular Expression Examples](https://mkyong.com/java/java-regular-expression-examples/)
+- [Regular Expressions in Java (Regex)](https://www.examclouds.com/java/java-core/java-regex)
+- [JAVA - REGULAR EXPRESSIONS **(*.PDF)**](https://people.computing.clemson.edu/~yfeaste/cpsc215/cpsc2150F15/cpsc215Fall215/Notes/Tutorialspoint_webpages/16java_regular_expressions.pdf)
+- [Regular Expressions in Java (Java Regex)](https://intellipaat.com/blog/regular-expressions-in-java-java-regex/)
+- [Using Regular Expressions in Java **(from regexone.com)**](https://regexone.com/references/java)
+- [Java Regular Expressions Tutorial with Examples](https://o7planning.org/10175/java-regular-expression)
+- [Java Regex](https://regexregex.com/en/java-regex/)
+- [Java Regular Expression (RegEx) Explained](https://www.golinuxcloud.com/java-regex-examples/)
+- [Java Regex Tutorial With Regular Expression Examples](https://www.softwaretestinghelp.com/java-regex-tutorial/)
+- [7 Easy Ways to Use Regular Expressions in Java ](https://www.wikitechy.com/regular-expressions-in-java/)
