@@ -1,11 +1,11 @@
 ### Практические примеры использования RexEx
 
-- [Less_33_Example_CorrectIP](./Less_33_Example_CorrectIP.java) 
+**[Less_33_Example_CorrectIP](./Less_33_Example_CorrectIP.java)** 
 
 Определить попадает ли введенный IP в требуемый диапазон 0-255.0-255.0-255.0-255
 
 ---
-- [Less_33_Example_EmailSet](./Less_33_Example_EmailSet.java)
+**[Less_33_Example_EmailSet](./Less_33_Example_EmailSet.java)**
 
 Вводим с клавиатуры сочетание "команда + электронный адрес" через пробел, либо просто команда:
 - DELL - удалить элемент коллекции;
@@ -17,7 +17,7 @@
 Три команды DELL, ADD, LIST - должны имитировать минимальное управление элементами коллекции.
 
 ---
-- [Less_33_Example_GetMoneyAndSum](./Less_33_Example_GetMoneyAndSum.java)
+**[Less_33_Example_GetMoneyAndSum](./Less_33_Example_GetMoneyAndSum.java)**
 
 Из простой строки содержащей текст и цифры, извлечь цифровые значения и найти их сумму.
 
@@ -27,20 +27,20 @@
 - `*.find()`.
 
 ---
-- [Less_33_Example_NotSplitDivide](./Less_33_Example_NotSplitDivide.java)
+**[Less_33_Example_NotSplitDivide](./Less_33_Example_NotSplitDivide.java)**
 
 Не используя метод `*.split()` разделить строку на слова и цифры, данные вывести на экран. 
 Воспользоваться методом `*.end()`.
 
 ---
-- [Less_33_Example_ParsingMainApp](./Less_33_Example_ParsingMainApp.java)
+**[Less_33_Example_ParsingMainApp](./Less_33_Example_ParsingMainApp.java)**
 
 Программа предназначена для парсинга информации из файла формата `*.csv`, она не универсальна, 
 в данном случае нужно выделить доходы и расходы из банковской выписки `movementList.csv` и 
 распределить расходы по компаниям оказывающим услуги.
 
 ---
-- [Less_33_Example_StrRegExReplacement](./Less_33_Example_StrRegExReplacement.java)
+**[Less_33_Example_StrRegExReplacement](./Less_33_Example_StrRegExReplacement.java)**
 
 Пример замены элементов строки элементами коллекции Map. 
 
@@ -50,7 +50,7 @@
 - `*.appendTail()`;
 
 ---
-- [Less_33_Example_StrRegExRepShort](./Less_33_Example_StrRegExRepShort.java)
+**[Less_33_Example_StrRegExRepShort](./Less_33_Example_StrRegExRepShort.java)**
 
 Пример работы методов:
 - `*.group()`;
@@ -60,7 +60,7 @@
 Очень похож на Less_33_Example_StrRegExReplacement, но короче.
 
 ---
-- [Less_33_Example_TotalCosts](./Less_33_Example_TotalCosts.java)
+**[Less_33_Example_TotalCosts](./Less_33_Example_TotalCosts.java)**
 
 Имитация парсинга списка покупок. Имеется входящая строка из списка покупок, с разделителем между 
 покупками знаком точка с запятой. (количество товара, название товара, цена;) Найти итоговые затраты 
