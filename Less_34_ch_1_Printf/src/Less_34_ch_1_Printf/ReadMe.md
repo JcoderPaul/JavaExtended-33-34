@@ -182,18 +182,18 @@ Java (например, `L` для миллисекунд в пределах с
 **Для форматирования времени используются следующие символы преобразования:**
 
 - `H` - Час дня для 24-часового формата, отформатированный как две цифры с начальным нулем, если необходимо -> 00 - 23
-- `I' - Час для 12-часового формата, отформатированный как две цифры с начальным нулем, если необходимо -> 01 - 12
-- `k' - Час дня для 24-часового формата -> 0 - 23
-- `l' - Час для 12-часового формата -> 1 - 12
-- `M' - Минуты в течение часа отформатированы как две цифры с начальным нулем, если необходимо -> 00 - 59
-- `S' - Секунды в течение минуты, отформатированные как две цифры с начальным нулем, если это необходимо, -> 00 - 60 ("60" - это специальное значение, необходимое для поддержки високосных секунд).
-- `L' - Миллисекунды в пределах секунды отформатированы как три цифры с начальными нулями, если это необходимо -> 000 - 999
-- `N' - Наносекунда в пределах секунды, отформатированная как девять цифр с начальными нулями, если необходимо -> 000000000 - 999999999
-- `p' - [Утренний или дневной маркер](https://docs.oracle.com/javase/8/docs/api/java/text/DateFormatSymbols.html#getAmPmStrings--) для конкретного региона в нижнем регистре, например, "am" или "pm". Использование префикса преобразования переводит 'T' этот вывод в верхний регистр.
-- `z' - Числовое смещение часового пояса в стиле [RFC 822-0800](https://www.rfc-editor.org/rfc/rfc822.txt) относительно GMT, например. Это значение будет скорректировано по мере необходимости для перехода на летнее время. Для long, [Long](https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html) и [Date](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html) используемый часовой пояс является [часовым поясом по умолчанию](https://docs.oracle.com/javase/8/docs/api/java/util/TimeZone.html#getDefault--) для этого экземпляра виртуальной машины Java.
-- `Z' - Строка, представляющая аббревиатуру часового пояса. Это значение будет скорректировано по мере необходимости для перехода на летнее время. Для long, [Long](https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html) и [Date](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html) используемый часовой пояс является [часовым поясом по умолчанию](https://docs.oracle.com/javase/8/docs/api/java/util/TimeZone.html#getDefault--) для этого экземпляра виртуальной машины Java. Языковой стандарт Formatter заменит языковой стандарт аргумента (если есть).
-- `s' - Секунды с начала эпохи, начинающейся с 1 января 1970 года по 00:00:00 всемирному координированному времени, т.е. Long.MIN_VALUE/1000 до Long.MAX_VALUE/1000.
-- `Q' - Миллисекунды с начала эпохи, начиная с 1 января 1970 года по 00:00:00 всемирному координированному времени, т.е. Long.MIN_VALUE до Long.MAX_VALUE.
+- `I` - Час для 12-часового формата, отформатированный как две цифры с начальным нулем, если необходимо -> 01 - 12
+- `k` - Час дня для 24-часового формата -> 0 - 23
+- `l` - Час для 12-часового формата -> 1 - 12
+- `M` - Минуты в течение часа отформатированы как две цифры с начальным нулем, если необходимо -> 00 - 59
+- `S` - Секунды в течение минуты, отформатированные как две цифры с начальным нулем, если это необходимо, -> 00 - 60 ("60" - это специальное значение, необходимое для поддержки високосных секунд).
+- `L` - Миллисекунды в пределах секунды отформатированы как три цифры с начальными нулями, если это необходимо -> 000 - 999
+- `N` - Наносекунда в пределах секунды, отформатированная как девять цифр с начальными нулями, если необходимо -> 000000000 - 999999999
+- `p` - [Утренний или дневной маркер](https://docs.oracle.com/javase/8/docs/api/java/text/DateFormatSymbols.html#getAmPmStrings--) для конкретного региона в нижнем регистре, например, "am" или "pm". Использование префикса преобразования переводит 'T' этот вывод в верхний регистр.
+- `z` - Числовое смещение часового пояса в стиле [RFC 822-0800](https://www.rfc-editor.org/rfc/rfc822.txt) относительно GMT, например. Это значение будет скорректировано по мере необходимости для перехода на летнее время. Для long, [Long](https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html) и [Date](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html) используемый часовой пояс является [часовым поясом по умолчанию](https://docs.oracle.com/javase/8/docs/api/java/util/TimeZone.html#getDefault--) для этого экземпляра виртуальной машины Java.
+- `Z` - Строка, представляющая аббревиатуру часового пояса. Это значение будет скорректировано по мере необходимости для перехода на летнее время. Для long, [Long](https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html) и [Date](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html) используемый часовой пояс является [часовым поясом по умолчанию](https://docs.oracle.com/javase/8/docs/api/java/util/TimeZone.html#getDefault--) для этого экземпляра виртуальной машины Java. Языковой стандарт Formatter заменит языковой стандарт аргумента (если есть).
+- `s` - Секунды с начала эпохи, начинающейся с 1 января 1970 года по 00:00:00 всемирному координированному времени, т.е. Long.MIN_VALUE/1000 до Long.MAX_VALUE/1000.
+- `Q` - Миллисекунды с начала эпохи, начиная с 1 января 1970 года по 00:00:00 всемирному координированному времени, т.е. Long.MIN_VALUE до Long.MAX_VALUE.
 
 **Для форматирования дат используются следующие символы преобразования:**
 
@@ -322,17 +322,16 @@ Java (например, `L` для миллисекунд в пределах с
 
 ---
 **Доп. материал:**
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Guide to java.util.Formatter](https://www.baeldung.com/java-string-formatter)
+- [Format Specifiers in Java](https://www.geeksforgeeks.org/java/format-specifiers-in-java/)
+- [Formatting Output with printf() in Java](https://www.baeldung.com/java-printstream-printf)
+- [Java Formatter Class](https://www.javaguides.net/2024/06/java-formatter-class.html)
+- [The versatile Formatter class in Java](https://medium.com/@tk512/the-versatile-formatter-class-in-java-38ee5785ba54)
+- [Java Output Formatting](https://www.scaler.com/topics/java-output-formatting/)
+- [Format Java Strings with Java 25](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-format-a-Java-String-with-printf-example)
+
+---
+**Online демонстратор:**
+- [Online Java Formatter](https://www.tutorialspoint.com/online_java_formatter.htm)
+- [Java Formatter](https://jsonformatter.org/java-formatter)
+- [JAVA Viewer](https://codebeautify.org/javaviewer)
