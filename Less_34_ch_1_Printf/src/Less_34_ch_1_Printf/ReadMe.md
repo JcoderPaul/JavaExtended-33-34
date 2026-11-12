@@ -1,29 +1,59 @@
-******* Class Formatter *******
+- [Class Formatter](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html)
 
-Наследует и реализует: public final class Formatter
-                       extends Object
-                       implements Closeable, Flushable
+---
+### Class Formatter
 
-Интерпретатор строк формата в стиле printf. Этот класс обеспечивает поддержку
-выравнивания и выравнивания макета, общие форматы для числовых, строковых данных
-и данных даты/времени, а также выходные данные, зависящие от локали.
+**Все реализованные интерфейсы:** 
+- [Closeable](https://docs.oracle.com/javase/8/docs/api/java/io/Closeable.html),
+- [Flushable](https://docs.oracle.com/javase/8/docs/api/java/io/Flushable.html),
+- [AutoCloseable](https://docs.oracle.com/javase/8/docs/api/java/lang/AutoCloseable.html).
 
-Поддерживаются распространенные типы Java, такие, как byte, BigDecimal и Calendar.
-Ограниченная настройка форматирования для произвольных типов пользователей предоставляется
-через интерфейс Formattable.
+```
+public final class Formatter
+  extends Object
+    implements Closeable, Flushable
+```
 
-Форматтеры НЕ безопасны для многопоточного использования. Безопасность в многопоточном
-программировании является обязательной и в данном случае ложится на плечи пользователей
-методов этого класса.
+Интерпретатор строк формата в стиле `printf`. Этот класс обеспечивает поддержку выравнивания и выравнивания макета, общие форматы для числовых, 
+строковых данных и данных даты/времени, а также выходные данные, зависящие от локали.
 
-Форматированная печать для языка Java похожа на реализацию printf языка C. Хотя строки
-формата аналогичны C, были сделаны некоторые настройки, чтобы приспособиться к языку Java
-и использовать некоторые его функции. Кроме того, форматирование в Java более строгое,
-чем в C. Например, если преобразование несовместимо с флагом, будет выдано исключение.
-В C неприменимые флаги молча игнорируются. Таким образом, строки формата должны быть
+Поддерживаются распространенные типы Java, такие, как byte, [BigDecimal](https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html) и 
+[Calendar](https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html). Ограниченная настройка форматирования для произвольных типов 
+пользователей предоставляется через [интерфейс Formattable](https://docs.oracle.com/javase/8/docs/api/java/util/Formattable.html).
+
+Форматтеры НЕ безопасны для многопоточного использования. Безопасность в многопоточном программировании является обязательной и в данном случае 
+ложится на плечи пользователей методов этого класса.
+
+Форматированная печать для языка Java похожа на реализацию printf языка C. Хотя строки формата аналогичны C, были сделаны некоторые настройки, 
+чтобы приспособиться к языку Java и использовать некоторые его функции. Кроме того, форматирование в Java более строгое, чем в C. Например, если 
+преобразование несовместимо с флагом, будет выдано исключение. В C неприменимые флаги молча игнорируются. Таким образом, строки формата должны быть
 узнаваемы программистами на C, но не обязательно полностью совместимы со строками на C.
 
-Простые реализации метода см. в примерах: Less_34_Printf_Step1
+Примеры ожидаемого использования:
+
+```java
+  StringBuilder sb = new StringBuilder();
+  // Направлять весь вывод в объект Appendable object sb
+  Formatter formatter = new Formatter(sb, Locale.US);
+  
+  // Для изменения порядка вывода можно использовать явные индексы аргументов.
+  formatter.format("%4$2s %3$2s %2$2s %1$2s", "a", "b", "c", "d")
+  // -> " d  c  b  a"
+  
+  // Optional locale as the first argument can be used to get
+  // locale-specific formatting of numbers.  The precision and width can be
+  // given to round and align the value.
+  formatter.format(Locale.FRANCE, "e = %+10.4f", Math.E);
+  // -> "e =    +2,7183"
+  
+  // The '(' numeric flag may be used to format negative numbers with
+  // parentheses rather than a minus sign.  Group separators are
+  // automatically inserted.
+  formatter.format("Amount gained or lost since last statement: $ %(,.2f", balanceDelta);
+  // -> "Amount gained or lost since last statement: $ (6,217.58)"
+```
+
+Простые реализации метода см. в примерах: [Less_34_Printf_Step1](./Less_34_Printf_Step1.java)
 
 ******* Синтаксис *******
 
