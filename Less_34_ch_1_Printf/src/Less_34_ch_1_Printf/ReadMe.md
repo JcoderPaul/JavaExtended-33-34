@@ -138,15 +138,15 @@ String s = String.format("Duke's Birthday: %1$tm %1$te,%1$tY", c);
 ### Преобразования
 
 Преобразования делятся на следующие категории:
-**1. General** - может применяться к любому типу аргумента;
-**2. Character** - может применяться к базовым типам, представляющим символы Unicode: char, Character, byte, Byte, short и Short. 
+- **1. General** - может применяться к любому типу аргумента;
+- **2. Character** - может применяться к базовым типам, представляющим символы Unicode: char, Character, byte, Byte, short и Short. 
 Это преобразование также может быть применено к типам int и Integer, когда Character.isValidCodePoint(int) возвращает значение true.
-**3. Numeric**
+- **3. Numeric**
     - Integral - может применяться к целочисленным типам Java: byte, Byte, short, Short, int и Integer, long, Long и BigInteger.
     - Floating Point - может применяться к типам с плавающей запятой Java: float, Float, double, Double и BigDecimal.
-**4. Date/Time** - может применяться к типам Java, способным кодировать дату или время: long, Long, Calendar и Date.
-**5. Percent** - выводит литеральное "%" ('\u0025')
-**6. Line Separator** - создает разделитель строк для конкретной платформы.
+- **4. Date/Time** - может применяться к типам Java, способным кодировать дату или время: long, Long, Calendar и Date.
+- **5. Percent** - выводит литеральное "%" ('\u0025')
+- **6. Line Separator** - создает разделитель строк для конкретной платформы.
 
 В следующей таблице приведены поддерживаемые преобразования. Преобразования,
 обозначенные символом верхнего регистра (например, «B», «H», «S», «C», «X»,
