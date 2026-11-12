@@ -40,31 +40,64 @@ public final class Formatter
   formatter.format("%4$2s %3$2s %2$2s %1$2s", "a", "b", "c", "d")
   // -> " d  c  b  a"
   
-  // Optional locale as the first argument can be used to get
-  // locale-specific formatting of numbers.  The precision and width can be
-  // given to round and align the value.
+  /**
+      В качестве первого аргумента можно указать локаль — это позволит
+      получить форматирование чисел, соответствующее данной локали.
+      Также можно задать точность и ширину, чтобы округлить значение и
+      выровнять его.
+  */
   formatter.format(Locale.FRANCE, "e = %+10.4f", Math.E);
   // -> "e =    +2,7183"
   
-  // The '(' numeric flag may be used to format negative numbers with
-  // parentheses rather than a minus sign.  Group separators are
-  // automatically inserted.
+  /**
+      Числовой флаг «(» можно использовать для форматирования отрицательных чисел:
+      они будут заключаться в круглые скобки вместо использования знака «минус».
+      Разделители групп вставляются автоматически.
+  */
   formatter.format("Amount gained or lost since last statement: $ %(,.2f", balanceDelta);
   // -> "Amount gained or lost since last statement: $ (6,217.58)"
 ```
 
+Существуют вспомогательные методы для выполнения типичных задач форматирования, примеры их вызова приведены ниже:
+
+```java
+  // Записывает отформатированную строку в System.out.
+  System.out.format("Local time: %tT", Calendar.getInstance());
+  // -> "Local time: 13:34:18"
+
+  // Записывает отформатированный вывод в System.err.
+  System.err.printf("Unable to open file '%1$s': %2$s", fileName, exception.getMessage());
+  // -> "Unable to open file 'food': No such file or directory"
+```
+
+Подобно функции sprintf(3) в языке C, строки можно форматировать с помощью статического метода String.format:
+
+```java
+  import java.util.Calendar;
+  import java.util.GregorianCalendar;
+  import static java.util.Calendar.*;
+
+  // Отформатировать строку, содержащую дату.
+  Calendar c = new GregorianCalendar(1995, MAY, 23);
+  String s = String.format("Duke's Birthday: %1$tb %1$te, %1$tY", c);
+  // -> s == "Duke's Birthday: May 23, 1995"
+```
+
 Простые реализации метода см. в примерах: [Less_34_Printf_Step1](./Less_34_Printf_Step1.java)
 
-******* Синтаксис *******
+---
+### Синтаксис
 
 Каждый метод, производящий форматированный вывод, требует строки формата и
 списка аргументов. Строка формата — это строка, которая может содержать
 фиксированный текст и один или несколько встроенных спецификаторов формата.
 Рассмотрим следующий пример:
------------------------------------------------------------------------------
+
+```java
 Calendar c = ...;
 String s = String.format("Duke's Birthday: %1$tm %1$te,%1$tY", c);
------------------------------------------------------------------------------
+```
+
 Отформатированная строка является первым аргументом метода *.format().
 Где содержится три спецификатора формата «%1$tm», «%1$te» и «%1$tY»,
 которые указывают, как следует обрабатывать аргументы и где их следует
