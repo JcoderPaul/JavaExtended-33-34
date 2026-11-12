@@ -139,37 +139,25 @@ String s = String.format("Duke's Birthday: %1$tm %1$te,%1$tY", c);
 
 Преобразования делятся на следующие категории:
 - **1. General** - может применяться к любому типу аргумента;
-- **2. Character** - может применяться к базовым типам, представляющим символы Unicode: char, Character, byte, Byte, short и Short. 
-Это преобразование также может быть применено к типам int и Integer, когда Character.isValidCodePoint(int) возвращает значение true.
+- **2. Character** - может применяться к базовым типам, представляющим символы Unicode: char, [Character](https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html), byte, [Byte](https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html), short и [Short](https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html). 
+Это преобразование также может быть применено к типам int и [Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html), когда [Character.isValidCodePoint(int)](https://docs.oracle.com/javase/8/docs/api/java/lang/Character.html#isValidCodePoint-int-) возвращает значение true.
 - **3. Numeric**
-    - Integral - может применяться к целочисленным типам Java: byte, Byte, short, Short, int и Integer, long, Long и BigInteger.
-    - Floating Point - может применяться к типам с плавающей запятой Java: float, Float, double, Double и BigDecimal.
-- **4. Date/Time** - может применяться к типам Java, способным кодировать дату или время: long, Long, Calendar и Date.
+    - **Integral** - может применяться к целочисленным типам Java: byte, [Byte](https://docs.oracle.com/javase/8/docs/api/java/lang/Byte.html), short, [Short](https://docs.oracle.com/javase/8/docs/api/java/lang/Short.html), int и [Integer](https://docs.oracle.com/javase/8/docs/api/java/lang/Integer.html), long, [Long](https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html) и [BigInteger](https://docs.oracle.com/javase/8/docs/api/java/math/BigInteger.html).
+    - **Floating Point** - может применяться к типам с плавающей запятой Java: float, [Float](https://docs.oracle.com/javase/8/docs/api/java/lang/Float.html), double, [Double](https://docs.oracle.com/javase/8/docs/api/java/lang/Double.html) и [BigDecimal](https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html).
+- **4. Date/Time** - может применяться к типам Java, способным кодировать дату или время: long, [Long](https://docs.oracle.com/javase/8/docs/api/java/lang/Long.html), [Calendar](https://docs.oracle.com/javase/8/docs/api/java/util/Calendar.html), [Date](https://docs.oracle.com/javase/8/docs/api/java/util/Date.html) и [TemporalAccessor](https://docs.oracle.com/javase/8/docs/api/java/time/temporal/TemporalAccessor.html).
 - **5. Percent** - выводит литеральное "%" ('\u0025')
 - **6. Line Separator** - создает разделитель строк для конкретной платформы.
 
-В следующей таблице приведены поддерживаемые преобразования. Преобразования,
-обозначенные символом верхнего регистра (например, «B», «H», «S», «C», «X»,
-«E», «G», «A» и «T») одинаковы, как и для соответствующих символов преобразования
-нижнего регистра, за исключением того, что результат преобразуется в верхний
-регистр в соответствии с правилами преобладающей локалью. Результат эквивалентен
-следующему вызову String.toUpperCase().
+В следующей таблице приведены поддерживаемые преобразования. Преобразования, обозначенные символом верхнего регистра (например, `B`, `H`, `S`, `C`, `X`,
+`E`, `G`, `A` и `T`) одинаковы, как и для соответствующих символов преобразования нижнего регистра, за исключением того, что результат преобразуется в верхний
+регистр в соответствии с правилами преобладающей локалью. Результат эквивалентен следующему вызову String.toUpperCase().
 
--------------------------------------------------------------------------------------------
-Conversion | Argument Category | Description
--------------------------------------------------------------------------------------------
-'b', 'B'   | general	       | Если аргумент arg равен null, то результатом будет false.
-           |                   | Если arg является boolean или Boolean, то результатом является
-           |                   | строка, возвращаемая String.valueOf(arg). В противном случае
-           |                   | результат является true.
--------------------------------------------------------------------------------------------
-'h', 'H'   | general	       | Если аргумент arg равен null, то и результатом будет null.
-           |                   | В противном случае результат получается вызовом
-           |                   | Integer.toHexString(arg.hashCode()).
--------------------------------------------------------------------------------------------
-'s', 'S'   | general	       | Если аргумент arg равен null, то результатом будет null. Если
-           |                   | arg реализует Formattable, то вызывается arg.formatTo. В противном
-           |                   | случае результат получается вызовом arg.toString().
+
+| Conversion | Argument Category | Description |
+|------------|-------------------|-------------|
+| 'b', 'B'   | general	         | Если аргумент arg равен null, то результатом будет false. Если arg является boolean или [Boolean](https://docs.oracle.com/javase/8/docs/api/java/lang/Boolean.html), то результатом является строка, возвращаемая [String.valueOf(arg)](https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#valueOf-boolean-). В противном случае результат является true. |
+| 'h', 'H'   | general	         | Если аргумент arg равен null, то и результатом будет null. В противном случае результат получается вызовом Integer.toHexString(arg.hashCode()). |
+| 's', 'S'   | general	         | Если аргумент arg равен null, то результатом будет null. Если arg реализует [Formattable](https://docs.oracle.com/javase/8/docs/api/java/util/Formattable.html), то вызывается [arg.formatTo](https://docs.oracle.com/javase/8/docs/api/java/util/Formattable.html#formatTo-java.util.Formatter-int-int-int-). В противном случае результат получается вызовом arg.toString(). |
 -------------------------------------------------------------------------------------------
 'c', 'C'   | character         | Результат - символ Unicode
 'd'        | integral          | Результат форматируется как десятичное целое
