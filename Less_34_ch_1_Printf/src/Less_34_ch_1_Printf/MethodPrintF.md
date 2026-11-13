@@ -65,12 +65,10 @@
 
 ---
 **Доп. материал:**
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [The Java™ Tutorials - Formatting Numeric Print Output **(by Oracle)**](https://docs.oracle.com/javase/tutorial/java/data/numberformat.html)
+- [Java Output printf() Method](https://www.w3schools.com/java/ref_output_printf.asp)
+- [Formatting Output with printf() in Java](https://www.baeldung.com/java-printstream-printf)
+- [Printf() в Java](https://javarush.com/groups/posts/printf-v-java)
+- [Console printf(String, Object) method in Java with Examples](https://www.geeksforgeeks.org/java/console-printfstring-object-method-in-java-with-examples/)
+- [Java printf( ) Method Quick Reference (PDF)](https://w3.cs.jmu.edu/weikleda/cs149/wk-03/printf_reference.pdf)
+- [How to Format Java 25 Output with printf, formatted and IO](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-use-Java-printf-to-format-output)
