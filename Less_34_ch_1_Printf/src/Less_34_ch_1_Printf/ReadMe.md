@@ -318,7 +318,8 @@ Java (например, `L` для миллисекунд в пределах с
 Если не указано иное, передача null аргумента любому методу или конструктору в этом классе вызовет NullPointerException.
 
 ---
-[См. более подробно](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#detail)
+- [См. более подробно](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#detail)
+- [Метод *.printf() в Java](./MethodPrintF.md)
 
 ---
 **Доп. материал:**
