@@ -319,7 +319,7 @@ Java (например, `L` для миллисекунд в пределах с
 
 ---
 - [См. более подробно](https://docs.oracle.com/javase/8/docs/api/java/util/Formatter.html#detail)
-- [Метод *.printf() в Java](../../../Less_34_ch_1_Printf/MethodPrintF.md)
+- [Метод *.printf() в Java](../../../src/Less_34_ch_1_Printf/MethodPrintF.md)
 
 ---
 **Доп. материал:**
