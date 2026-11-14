@@ -323,6 +323,8 @@ Java (например, `L` для миллисекунд в пределах с
 
 ---
 **Доп. материал:**
+- [Java Formatter format() Method](https://www.tutorialspoint.com/java/util/formatter_format.htm)
+- [Java Formatter format()](https://www.concretepage.com/java/java-formatter-format)
 - [Guide to java.util.Formatter](https://www.baeldung.com/java-string-formatter)
 - [Format Specifiers in Java](https://www.geeksforgeeks.org/java/format-specifiers-in-java/)
 - [Formatting Output with printf() in Java](https://www.baeldung.com/java-printstream-printf)
@@ -330,6 +332,13 @@ Java (например, `L` для миллисекунд в пределах с
 - [The versatile Formatter class in Java](https://medium.com/@tk512/the-versatile-formatter-class-in-java-38ee5785ba54)
 - [Java Output Formatting](https://www.scaler.com/topics/java-output-formatting/)
 - [Format Java Strings with Java 25](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/How-to-format-a-Java-String-with-printf-example)
+- [Java String format() Method](https://www.w3schools.com/java/ref_string_format.asp)
+- [Number Formatting in Java](https://www.baeldung.com/java-number-formatting)
+- [Guide to Java Formatter](https://www.javabyexamples.com/guide-to-java-formatter)
+- [Java By Examples (from GitHub)](https://github.com/isaolmez/javabyexamples/tree/master)
+- [Java Formatter format() Method with Example](https://www.includehelp.com/java/formatter-format-method-with-example.aspx)
+- [Format String in Java with printf(), format(), Formatter and MessageFormat](https://stackabuse.com/how-to-format-a-string-in-java-with-examples/)
+- [Java String.format()](https://www.baeldung.com/string-format)
 
 ---
 **Online демонстратор:**
